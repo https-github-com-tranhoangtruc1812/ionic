@@ -1,0 +1,25 @@
+<ion-content class="background">
+    <div class="content">
+        <div class="nut-action">
+            <ion-button fill="clear" color="dark" size="small" routerLink="/home" routerDirection="root">
+                <p class="dangnhap-text">Đăng Nhập</p>
+            </ion-button>
+            <ion-button fill="clear" color="dark" size="small">
+                <p class="dangky-text">Đăng Ký</p>
+            </ion-button>
+        </div>
+        <!-- nut-action -->
+        <!-- form -->
+        <div class="ion-padding">
+            <ion-input placeholder="Tài Khoản" [(ngModel)]='userName' style="padding-left:10px !important;background-color: #61ABE9; font-family:'Nunito,san-serif'"></ion-input> <br>
+            <ion-input placeholder="Mật khẩu" type = "password" [(ngModel)]="password" style="padding-left:10px !important;background-color: #61ABE9;font-family:'Nunito,san-serif'"></ion-input><br>
+            <ion-input placeholder="Nhập lại mật khẩu" type = "password" style="padding-left:10px !important;background-color: #61ABE9;font-family:'Nunito,san-serif'"></ion-input>
+        </div>
+        <ion-button class="action-nut" (click)="add()" expand="full" fill="clear" style="text-transform: none;background: #FF6AE9;">Đăng Ký</ion-button>
+        <ion-button fill="clear" style="font-size: 10px;padding-bottom: 20px; color: #a8a8a8; margin-right: 10px;
+        text-transform: none;font-family: 'Nunito ,san-serif';">Bạn đã có tài khoản ?</ion-button>
+    </div>
+    <!-- content -->
+    
+
+</ion-content>
